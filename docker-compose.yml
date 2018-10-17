@@ -7,6 +7,8 @@ services:
          - "5000:5000"
         volumes:
          - ./webapp:/webapp
+        links:
+         - databse
     database:
             build: ./database
             ports:
